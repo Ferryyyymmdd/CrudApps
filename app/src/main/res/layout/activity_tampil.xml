@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/bg1"
+    tools:context=".TampilActivity">
+
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btbg2"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:background="@drawable/edtbg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="NIM"
+        android:id="@+id/hapus"
+        android:textSize="20dp"
+        android:textColorHint="#44454f"
+        android:textColor="#212021"
+        android:layout_below="@+id/textViewData"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnhapus"
+        android:layout_width="60pt"
+        android:layout_height="40dp"
+        android:background="@drawable/btbg"
+        android:text="Hapus"
+        android:textSize="15sp"
+        android:textColor="#fff"
+        android:layout_below="@id/hapus" />
+
+
+</RelativeLayout>

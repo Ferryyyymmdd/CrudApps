@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:background="@drawable/bg1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Form Tambah Data"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:layout_marginBottom="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#80ffffff"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kode Obat"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/edtkode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Kode Obat"
+                android:textSize="15dp"
+                android:textColorHint="#80000000"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama Obat"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/edtnama"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Nama Obat"
+                android:textSize="15dp"
+                android:textColorHint="#80000000"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jumlah Obat"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/edtjumlah"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Jumlah Obat"
+                android:textSize="15dp"
+                android:textColorHint="#80000000"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/btnsimpan"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="SIMPAN"
+                android:backgroundTint="#954C2212"
+                android:padding="1dp"/>
+
+            <Button
+                android:id="@+id/btntampil"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="TAMPIL"
+                android:backgroundTint="#954C2212"
+                android:padding="1dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="-48dp"/>
+
+            <Button
+                android:id="@+id/btnedit"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="edit"
+                android:backgroundTint="#954C2212"
+                android:padding="1dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="-48dp"/>
+            <Button
+                android:id="@+id/btnhapus"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="HAPUS"
+                android:backgroundTint="#954C2212"
+                android:padding="1dp"
+                android:layout_marginTop="-48dp"
+                android:layout_marginLeft="220dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
