@@ -56,14 +56,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Perpustakaan Daerah"
+                        android:text="Opotek Tuah"
                         android:textColor="#000000"
                         android:textSize="20sp" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="JL Bersamamu Selamanya"
+                        android:text="JL Jl Bersamamu Dimalam Hari"
                         android:textColor="#000000"
                         android:textSize="15sp" />
 

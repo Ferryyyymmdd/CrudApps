@@ -9,11 +9,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.constants.ScaleTypes;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.google.android.material.navigation.NavigationView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DashboardActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
     private DrawerLayout drawerLayout;
+    private ImageSlider imageSlider;
     private ActionBarDrawerToggle drawerToggle;
 
     @Override
@@ -30,6 +37,17 @@ public class DashboardActivity extends AppCompatActivity implements NavigationVi
         drawerToggle.syncState();
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        imageSlider = findViewById(R.id.imageSlider);
+
+        List<SlideModel> imageList = new ArrayList<>();
+        imageList.add(new SlideModel(R.drawable.image, "Obat 1", ScaleTypes.FIT));
+        imageList.add(new SlideModel(R.drawable.image2, "Obat 2", ScaleTypes.FIT));
+        imageList.add(new SlideModel(R.drawable.image3, "Obat 3", ScaleTypes.FIT));
+        imageList.add(new SlideModel(R.drawable.image4, "Obat 4", ScaleTypes.FIT));
+        imageList.add(new SlideModel(R.drawable.image5, "Obat 5", ScaleTypes.FIT));
+
+        imageSlider.setImageList(imageList);
     }
 
     @Override
